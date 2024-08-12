@@ -1,0 +1,1064 @@
+Renesas Optimizing Linker (W3.06.00 )             12-Aug-2024 17:45:34
+
+*** Options ***
+
+-MAKEUD=DefaultBuild\RL78_G15_ADC_PWM_GPIO.lk.ud
+-subcommand=DefaultBuild\RL78_G15_ADC_PWM_GPIO.clnk
+-Input=DefaultBuild\main.obj
+-Input=DefaultBuild\Config_PORT.obj
+-Input=DefaultBuild\Config_PORT_user.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_tau_common.obj
+-Input=DefaultBuild\hdwinit.obj
+-Input=DefaultBuild\r_bsp_init.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\r_bsp_common.obj
+-Input=DefaultBuild\r_bsp_common_ccrl.obj
+-Input=DefaultBuild\mcu_clocks.obj
+-Input=DefaultBuild\Pin.obj
+-Input=DefaultBuild\Config_TAU0_1.obj
+-Input=DefaultBuild\Config_TAU0_1_user.obj
+-Input=DefaultBuild\custom_func.obj
+-Input=DefaultBuild\Config_UART0.obj
+-Input=DefaultBuild\Config_UART0_user.obj
+-Input=DefaultBuild\r_cg_sau_common.obj
+-Input=DefaultBuild\Config_INTC.obj
+-Input=DefaultBuild\Config_INTC_user.obj
+-Input=DefaultBuild\Config_ADC.obj
+-Input=DefaultBuild\Config_ADC_user.obj
+-Input=DefaultBuild\r_cg_ad_common.obj
+-Input=DefaultBuild\Config_TAU0_2.obj
+-Input=DefaultBuild\Config_TAU0_2_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F12068.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\RL78_G15_ADC_PWM_GPIO.abs
+-OCDBG=85
+-DEBUG_MONITOR=01E00-01FFF
+-USER_OPT_BYTE=EFF7F9
+-LISt=DefaultBuild\RL78_G15_ADC_PWM_GPIO.map
+-SHow=Reference,Xreference,Total_size
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-Total_size
+-NOLOgo
+-LIBrary=DefaultBuild\RL78_G15_ADC_PWM_GPIO.lib
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.init_array
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.RLIB
+                                  000000c4  000000c4         0   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.data
+                                  000000d8  00000135        5e   2
+.text
+                                  00000136  000002d5       1a0   1
+.const
+                                  00000800  00000885        86   2
+.textf
+                                  00000886  000014c5       c40   1
+.SLIB
+                                  000014c6  00001c8c       7c7   1
+.monitor2
+                                  00001e00  00001fff       200   1
+.bss
+                                  000ffb00  000ffb0d         e   2
+.dataR
+                                  000ffb0e  000ffb6b        5e   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  0000006c Byte(s)
+ROMDATA SECTION:  0000037c Byte(s)
+PROGRAM SECTION:  000015a7 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_04
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_03
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000ce  000000d7         a
+
+SECTION=.data
+FILE=DefaultBuild\custom_func.obj
+                                  000000d8  00000135        5e
+
+SECTION=.text
+FILE=DefaultBuild\cstart.obj
+                                  00000136  000001ac        77
+  _start
+                                  00000136         0   none ,g         0
+  _exit
+                                  000001aa         0   none ,g         1
+  _atexit
+                                  000001ac         0   none ,g         0
+FILE=DefaultBuild\r_bsp_common_ccrl.obj
+                                  000001ad  000001b8         c
+  _delay_wait
+                                  000001ad         0   none ,g         0
+  loop
+                                  000001ad         0   none ,l         2
+  check
+                                  000001b4         0   none ,l         1
+  _exit
+                                  000001b8         0   none ,l         0
+FILE=DefaultBuild\Config_TAU0_1_user.obj
+                                  000001b9  000001d2        1a
+  _r_Config_TAU0_1_interrupt@1
+                                  000001b9        1a   func ,l         0
+FILE=DefaultBuild\Config_UART0_user.obj
+                                  000001d3  0000029d        cb
+  _r_Config_UART0_interrupt_send@1
+                                  000001d3        39   func ,l         0
+  _r_Config_UART0_interrupt_receive@1
+                                  0000020c        5f   func ,l         0
+  _r_Config_UART0_interrupt_error@1
+                                  0000026b        33   func ,l         0
+FILE=DefaultBuild\Config_INTC_user.obj
+                                  0000029e  000002b7        1a
+  _r_Config_INTC_intp0_interrupt@1
+                                  0000029e        1a   func ,l         0
+FILE=DefaultBuild\Config_ADC_user.obj
+                                  000002b8  000002d1        1a
+  _r_Config_ADC_interrupt@1
+                                  000002b8        1a   func ,l         0
+FILE=DefaultBuild\Config_TAU0_2_user.obj
+                                  000002d2  000002d5         4
+  _r_Config_TAU0_2_channel2_interrupt@1
+                                  000002d2         2   func ,l         0
+  _r_Config_TAU0_2_channel3_interrupt@1
+                                  000002d4         2   func ,l         0
+
+SECTION=.const
+FILE=DefaultBuild\mcu_clocks.obj
+                                  00000800  0000081f        20
+  _g_fih_hz
+                                  00000800        20   data ,g         1
+FILE=DefaultBuild\custom_func.obj
+                                  00000820  00000885        66
+  ___T1000000@3@hardware_init
+                                  0000086a         e   data ,l         1
+
+SECTION=.textf
+FILE=DefaultBuild\main.obj
+                                  00000886  0000088f         a
+  _main
+                                  00000886         a   func ,g         1
+FILE=DefaultBuild\Config_PORT.obj
+                                  00000890  000008b4        25
+  _R_Config_PORT_Create
+                                  00000890        25   func ,g         1
+FILE=DefaultBuild\Config_PORT_user.obj
+                                  000008b5  000008b5         1
+  _R_Config_PORT_Create_UserInit
+                                  000008b5         1   func ,g         1
+FILE=DefaultBuild\r_cg_systeminit.obj
+                                  000008b6  000008ca        15
+  _R_Systeminit
+                                  000008b6        15   func ,g         1
+FILE=DefaultBuild\r_cg_tau_common.obj
+                                  000008cb  000008e1        17
+  _R_TAU0_Create
+                                  000008cb         d   func ,g         1
+  _R_TAU0_Set_PowerOn
+                                  000008d8         5   func ,g         0
+  _R_TAU0_Set_PowerOff
+                                  000008dd         5   func ,g         0
+FILE=DefaultBuild\hdwinit.obj
+                                  000008e2  000008f4        13
+  _hdwinit
+                                  000008e2         a   func ,g         1
+  _output_ports_configure@1
+                                  000008ec         2   func ,l         1
+  _interrupts_configure@1
+                                  000008ee         2   func ,l         1
+  _peripheral_modules_enable@1
+                                  000008f0         5   func ,l         1
+FILE=DefaultBuild\r_bsp_init.obj
+                                  000008f5  0000090c        18
+  _bsp_init_system
+                                  000008f5        13   func ,g         1
+  _bsp_init_hardware
+                                  00000908         5   func ,g         1
+FILE=DefaultBuild\stkinit.obj
+                                  0000090d  00000950        44
+  _stkinit
+                                  0000090d         0   none ,g         1
+  LSTINIT1
+                                  0000091b         0   none ,l         1
+  LSTINIT2
+                                  00000945         0   none ,l         2
+  LSTINIT3
+                                  00000950         0   none ,l         2
+FILE=DefaultBuild\r_bsp_common.obj
+                                  00000951  00000961        11
+  _R_BSP_GetFclkFreqHz
+                                  00000951        11   func ,g         0
+FILE=DefaultBuild\mcu_clocks.obj
+                                  00000962  000009b9        58
+  _get_fclk_freq_hz
+                                  00000962        36   func ,g         1
+  _mcu_clock_setup
+                                  00000998        22   func ,g         1
+FILE=DefaultBuild\Pin.obj
+                                  000009ba  000009ba         1
+  _R_Pins_Create
+                                  000009ba         1   func ,g         0
+FILE=DefaultBuild\Config_TAU0_1.obj
+                                  000009bb  00000a2b        71
+  _R_Config_TAU0_1_Create
+                                  000009bb        51   func ,g         1
+  _R_Config_TAU0_1_Start
+                                  00000a0c        10   func ,g         1
+  _R_Config_TAU0_1_Stop
+                                  00000a1c        10   func ,g         0
+FILE=DefaultBuild\Config_TAU0_1_user.obj
+                                  00000a2c  00000a2c         1
+  _R_Config_TAU0_1_Create_UserInit
+                                  00000a2c         1   func ,g         1
+FILE=DefaultBuild\custom_func.obj
+                                  00000a2d  00001118       6ec
+  _btn_get_tick
+                                  00000a2d        12   func ,g         2
+  _btn_set_tick
+                                  00000a3f        12   func ,g         3
+  _btn_tick_counter
+                                  00000a51        2a   func ,g         1
+  _get_tick
+                                  00000a7b        12   func ,g         4
+  _set_tick
+                                  00000a8d        12   func ,g         1
+  _tick_counter
+                                  00000a9f        2a   func ,g         1
+  _Sort_tab
+                                  00000ac9        7d   func ,g         1
+  _GetADC
+                                  00000b46        b7   func ,g         1
+  _ADC_Channel_config_Init
+                                  00000bfd        3e   func ,g         1
+  _GetVREF
+                                  00000c3b        5e   func ,g         1
+  _ADC_VREF_config_Init
+                                  00000c99        30   func ,g         1
+  _ADC_Process
+                                  00000cc9         8   func ,g         1
+  _ADC_init
+                                  00000cd1         a   func ,g         1
+  _ADC_Process_in_IRQ
+                                  00000cdb         5   func ,g         1
+  _get_TAU0_pwm_ch_duty
+                                  00000ce0        18   func ,g         5
+  _set_TAU0_pwm_ch_duty
+                                  00000cf8        1f   func ,g         4
+  _generate_TAU0_pwm_ch
+                                  00000d17        25   func ,g         3
+  _PWM_Process_Adjust
+                                  00000d3c        d6   func ,g         0
+  _convert_ADC_to_PWM
+                                  00000e12        53   func ,g         1
+  _LED_Default_reverse
+                                  00000e65        19   func ,g         1
+  _LED_Default
+                                  00000e7e        19   func ,g         1
+  _LED_state_machine
+                                  00000e97        92   func ,g         1
+  _Timer_1ms_IRQ
+                                  00000f29        55   func ,g         1
+  _loop
+                                  00000f7e        1a   func ,g         1
+  _Button_Process_long_counter
+                                  00000f98        10   func ,g         1
+  _Button_Process_in_polling
+                                  00000fa8        a7   func ,g         1
+  _Button_Process_in_IRQ
+                                  0000104f         5   func ,g         1
+  _UARTx_Process
+                                  00001054        6c   func ,g         1
+  _putchar
+                                  000010c0        1a   func ,g         2
+  _hardware_init
+                                  000010da        3f   func ,g         1
+FILE=DefaultBuild\Config_UART0.obj
+                                  00001119  00001276       15e
+  _R_Config_UART0_Create
+                                  00001119        a5   func ,g         1
+  _R_Config_UART0_Start
+                                  000011be        2e   func ,g         1
+  _R_Config_UART0_Stop
+                                  000011ec        25   func ,g         0
+  _R_Config_UART0_Send
+                                  00001211        3a   func ,g         0
+  _R_Config_UART0_Receive
+                                  0000124b        2c   func ,g         0
+FILE=DefaultBuild\Config_UART0_user.obj
+                                  00001277  00001289        13
+  _R_Config_UART0_Create_UserInit
+                                  00001277         1   func ,g         1
+  _r_Config_UART0_callback_sendend@1
+                                  00001278         1   func ,l         1
+  _r_Config_UART0_callback_receiveend@1
+                                  00001279         1   func ,l         1
+  _r_Config_UART0_callback_error@1
+                                  0000127a         5   func ,l         1
+  _r_Config_UART0_callback_softwareoverrun@1
+                                  0000127f         b   func ,l         1
+FILE=DefaultBuild\r_cg_sau_common.obj
+                                  0000128a  0000129c        13
+  _R_SAU0_Create
+                                  0000128a         9   func ,g         1
+  _R_SAU0_Set_PowerOn
+                                  00001293         5   func ,g         0
+  _R_SAU0_Set_PowerOff
+                                  00001298         5   func ,g         0
+FILE=DefaultBuild\Config_INTC.obj
+                                  0000129d  000012c1        25
+  _R_Config_INTC_Create
+                                  0000129d        17   func ,g         1
+  _R_Config_INTC_INTP0_Start
+                                  000012b4         7   func ,g         1
+  _R_Config_INTC_INTP0_Stop
+                                  000012bb         7   func ,g         0
+FILE=DefaultBuild\Config_INTC_user.obj
+                                  000012c2  000012c2         1
+  _R_Config_INTC_Create_UserInit
+                                  000012c2         1   func ,g         1
+FILE=DefaultBuild\Config_ADC.obj
+                                  000012c3  000013ba        f8
+  _R_Config_ADC_Create
+                                  000012c3        34   func ,g         1
+  _R_Config_ADC_Start
+                                  000012f7         a   func ,g         2
+  _R_Config_ADC_Stop
+                                  00001301         a   func ,g         2
+  _R_Config_ADC_Set_OperationOn
+                                  0000130b        17   func ,g         0
+  _R_Config_ADC_Set_OperationOff
+                                  00001322         4   func ,g         0
+  _R_Config_ADC_Get_Result_10bit
+                                  00001326         b   func ,g         2
+  _R_Config_ADC_Set_ADChannel
+                                  00001331        50   func ,g         0
+  _R_Config_ADC_Set_TestChannel
+                                  00001381        3a   func ,g         0
+FILE=DefaultBuild\Config_ADC_user.obj
+                                  000013bb  000013bb         1
+  _R_Config_ADC_Create_UserInit
+                                  000013bb         1   func ,g         1
+FILE=DefaultBuild\r_cg_ad_common.obj
+                                  000013bc  000013c5         a
+  _R_ADC_Set_PowerOn
+                                  000013bc         5   func ,g         0
+  _R_ADC_Set_PowerOff
+                                  000013c1         5   func ,g         0
+FILE=DefaultBuild\Config_TAU0_2.obj
+                                  000013c6  000014a1        dc
+  _R_Config_TAU0_2_Create
+                                  000013c6        9e   func ,g         1
+  _R_Config_TAU0_2_Start
+                                  00001464        1f   func ,g         1
+  _R_Config_TAU0_2_Stop
+                                  00001483        1f   func ,g         0
+FILE=DefaultBuild\Config_TAU0_2_user.obj
+                                  000014a2  000014c5        24
+  _get_TAU0_pwm_ch_data_reg_default
+                                  000014a2         8   func ,g         2
+  _get_TAU0_pwm_ch_data_reg
+                                  000014aa         7   func ,g         1
+  _set_TAU0_pwm_ch_data_reg
+                                  000014b1         7   func ,g         3
+  _R_Config_TAU0_2_Create_UserInit
+                                  000014b8         e   func ,g         1
+
+SECTION=.SLIB
+FILE=_COM_lmul
+                                  000014c6  0000150e        49
+  __COM_lmul
+                                  000014c6         0   none ,g         2
+FILE=_COM_uidiv
+                                  0000150f  00001529        1b
+  __COM_uidiv
+                                  00001511         0   none ,g         2
+FILE=_COM_uldiv
+                                  0000152a  0000157a        51
+  __COM_uldiv
+                                  0000152f         0   none ,g         3
+FILE=_COM_ulrem
+                                  0000157b  000015c7        4d
+  __COM_ulrem
+                                  0000157d         0   none ,g         4
+FILE=printf_tiny
+                                  000015c8  00001682        bb
+  _printf_tiny
+                                  000015c8        b6   func ,g         5
+  __REL_pc@1
+                                  0000167e         5   func ,l         2
+FILE=_REL_print_tiny
+                                  00001683  00001c82       600
+  __REL_print_tiny
+                                  00001683       600   func ,g         1
+FILE=isdigit
+                                  00001c83  00001c8c         a
+  _isdigit
+                                  00001c83         0   none ,g         1
+
+SECTION=.monitor2
+FILE=rlink_generates_02
+                                  00001e00  00001fff       200
+
+SECTION=.bss
+FILE=DefaultBuild\custom_func.obj
+                                  000ffb00  000ffb03         4
+  _flag_PROJ_CTL
+                                  000ffb00         4   data ,g        17
+FILE=DefaultBuild\Config_UART0.obj
+                                  000ffb04  000ffb0d         a
+  _gp_uart0_tx_address
+                                  000ffb04         2   data ,g         5
+  _g_uart0_tx_count
+                                  000ffb06         2   data ,g         4
+  _gp_uart0_rx_address
+                                  000ffb08         2   data ,g         4
+  _g_uart0_rx_count
+                                  000ffb0a         2   data ,g         4
+  _g_uart0_rx_length
+                                  000ffb0c         2   data ,g         3
+
+SECTION=.dataR
+FILE=DefaultBuild\custom_func.obj
+                                  000ffb0e  000ffb6b        5e
+  _counter_tick
+                                  000ffb0e         4   data ,g         8
+  _btn_counter_tick
+                                  000ffb12         4   data ,g         8
+  _pwm_duty
+                                  000ffb16        20   data ,g         2
+  _vdd_Vbgr
+                                  000ffb36         4   data ,g         2
+  _adc_buffer
+                                  000ffb3a        16   data ,g         1
+  _g_iConversionData
+                                  000ffb50        18   data ,g         3
+  _ADC_ch_value
+                                  000ffb68         2   data ,g         2
+  _state_idx@1@LED_state_machine
+                                  000ffb6a         1   data ,l         4
+  _cnt@2@Button_Process_in_polling
+                                  000ffb6b         1   data ,l         6
+
+Absolute value symbols
+FILE=rlink_generates_05
+  __s.textf
+                                  00000886         0   none ,g         0
+  __e.textf
+                                  000014c6         0   none ,g         0
+  __s.text
+                                  00000136         0   none ,g         0
+  __e.text
+                                  000002d6         0   none ,g         0
+  __s.const
+                                  00000800         0   none ,g         0
+  __e.const
+                                  00000886         0   none ,g         0
+  __s.constf
+                                  00000080         0   none ,g         0
+  __e.constf
+                                  00000080         0   none ,g         0
+  __s.data
+                                  000000d8         0   none ,g         0
+  __e.data
+                                  00000136         0   none ,g         0
+  __s.sdata
+                                  00000080         0   none ,g         0
+  __e.sdata
+                                  00000080         0   none ,g         0
+  __s.bss
+                                  000ffb00         0   none ,g         0
+  __e.bss
+                                  000ffb0e         0   none ,g         0
+  __s.sbss
+                                  000ffe20         0   none ,g         0
+  __e.sbss
+                                  000ffe20         0   none ,g         0
+  __s.dataR
+                                  000ffb0e         0   none ,g         0
+  __e.dataR
+                                  000ffb6c         0   none ,g         0
+  __s.sdataR
+                                  000ffe20         0   none ,g         0
+  __e.sdataR
+                                  000ffe20         0   none ,g         0
+  __s.init_array
+                                  00000080         0   none ,g         0
+  __e.init_array
+                                  00000080         0   none ,g         0
+  __s.RLIB
+                                  000000c4         0   none ,g         0
+  __e.RLIB
+                                  000000c4         0   none ,g         0
+  __s.SLIB
+                                  000014c6         0   none ,g         0
+  __e.SLIB
+                                  00001c8d         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c4         0   none ,g         0
+  __s.monitor1
+                                  000000ce         0   none ,g         0
+  __e.monitor1
+                                  000000d8         0   none ,g         0
+  __s.monitor2
+                                  00001e00         0   none ,g         0
+  __e.monitor2
+                                  00002000         0   none ,g         0
+  __s.security_id
+                                  000000c4         0   none ,g         0
+  __e.security_id
+                                  000000ce         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __RAM_ADDR_START
+                                  000ffb00         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         1
+  __STACK_ADDR_END
+                                  000ffb6c         0   none ,g         1
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 main
+     SECTION=.textf
+                 _main
+                                 00000886 0009(000001a6:.text)
+0002 Config_PORT
+     SECTION=.textf
+                 _R_Config_PORT_Create
+                                 00000890 0004(000008b7:.textf)
+0003 Config_PORT_user
+     SECTION=.textf
+                 _R_Config_PORT_Create_UserInit
+                                 000008b5 0002(000008b1:.textf)
+0004 r_cg_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 000008b6 0006(000008f1:.textf)
+0005 r_cg_tau_common
+     SECTION=.textf
+                 _R_TAU0_Create
+                                 000008cb 0004(000008bb:.textf)
+                 _R_TAU0_Set_PowerOn
+                                 000008d8
+                 _R_TAU0_Set_PowerOff
+                                 000008dd
+0006 hdwinit
+     SECTION=.textf
+                 _hdwinit
+                                 000008e2 0007(00000909:.textf)
+0007 r_bsp_init
+     SECTION=.textf
+                 _bsp_init_system
+                                 000008f5 0009(00000142:.text)
+                 _bsp_init_hardware
+                                 00000908 0009(000001a2:.text)
+0008 stkinit
+     SECTION=.textf
+                 _stkinit
+                                 0000090d 0009(0000013e:.text)
+0009 cstart
+     SECTION=.text
+                 _start
+                                 00000136
+                 _exit
+                                 000001aa 0009(000001ab:.text)
+                 _atexit
+                                 000001ac
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.init_array
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0010 r_bsp_common
+     SECTION=.textf
+                 _R_BSP_GetFclkFreqHz
+                                 00000951
+0011 r_bsp_common_ccrl
+     SECTION=.text
+                 _delay_wait
+                                 000001ad
+0012 mcu_clocks
+     SECTION=.const
+                 _g_fih_hz
+                                 00000800 0012(00000980:.textf)
+     SECTION=.textf
+                 _get_fclk_freq_hz
+                                 00000962 0010(00000954:.textf)
+                 _mcu_clock_setup
+                                 00000998 0007(00000904:.textf)
+0013 Pin
+     SECTION=.textf
+                 _R_Pins_Create
+                                 000009ba
+0014 Config_TAU0_1
+     SECTION=.textf
+                 _R_Config_TAU0_1_Create
+                                 000009bb 0005(000008d0:.textf)
+                 _R_Config_TAU0_1_Start
+                                 00000a0c 0016(000010e4:.textf)
+                 _R_Config_TAU0_1_Stop
+                                 00000a1c
+0015 Config_TAU0_1_user
+     SECTION=.textf
+                 _R_Config_TAU0_1_Create_UserInit
+                                 00000a2c 0014(00000a08:.textf)
+     SECTION=.text
+0016 custom_func
+     SECTION=.textf
+                 _btn_get_tick
+                                 00000a2d 0016(00000a65:.textf)
+                                          0016(00001012:.textf)
+                 _btn_set_tick
+                                 00000a3f 0016(00000a77:.textf)
+                                          0016(00000fa5:.textf)
+                                          0016(00001043:.textf)
+                 _btn_tick_counter
+                                 00000a51 0016(00000f9f:.textf)
+                 _get_tick
+                                 00000a7b 0016(00000ab3:.textf)
+                                          0016(00000f2d:.textf)
+                                          0016(00000f47:.textf)
+                                          0016(00000f61:.textf)
+                 _set_tick
+                                 00000a8d 0016(00000ac5:.textf)
+                 _tick_counter
+                                 00000a9f 0016(00000f2a:.textf)
+                 _Sort_tab
+                                 00000ac9 0016(00000bab:.textf)
+                 _GetADC
+                                 00000b46 0016(00000ccb:.textf)
+                 _ADC_Channel_config_Init
+                                 00000bfd 0016(00000cd8:.textf)
+                 _GetVREF
+                                 00000c3b 0016(00000cd5:.textf)
+                 _ADC_VREF_config_Init
+                                 00000c99 0016(00000cd2:.textf)
+                 _ADC_Process
+                                 00000cc9 0016(00000f8c:.textf)
+                 _ADC_init
+                                 00000cd1 0016(000010f6:.textf)
+                 _ADC_Process_in_IRQ
+                                 00000cdb 0023(000002c3:.text)
+                 _get_TAU0_pwm_ch_duty
+                                 00000ce0 0016(00000d59:.textf)
+                                          0016(00000d9f:.textf)
+                                          0016(00000db7:.textf)
+                                          0016(00000dff:.textf)
+                                          0016(00000e55:.textf)
+                 _set_TAU0_pwm_ch_duty
+                                 00000cf8 0016(00000d9a:.textf)
+                                          0016(00000dfa:.textf)
+                                          0016(00000e50:.textf)
+                                          0026(000014c2:.textf)
+                 _generate_TAU0_pwm_ch
+                                 00000d17 0016(00000daa:.textf)
+                                          0016(00000e0a:.textf)
+                                          0016(00000e60:.textf)
+                 _PWM_Process_Adjust
+                                 00000d3c
+                 _convert_ADC_to_PWM
+                                 00000e12 0016(00000f95:.textf)
+                 _LED_Default_reverse
+                                 00000e65 0016(00000edf:.textf)
+                 _LED_Default
+                                 00000e7e 0016(000010ec:.textf)
+                 _LED_state_machine
+                                 00000e97 0016(00000f92:.textf)
+                 _Timer_1ms_IRQ
+                                 00000f29 0015(000001c4:.text)
+                 _loop
+                                 00000f7e 0001(0000088b:.textf)
+                 _Button_Process_long_counter
+                                 00000f98 0016(00000f7b:.textf)
+                 _Button_Process_in_polling
+                                 00000fa8 0016(00000f8f:.textf)
+                 _Button_Process_in_IRQ
+                                 0000104f 0021(000002a9:.text)
+                 _UARTx_Process
+                                 00001054 0018(00001285:.textf)
+                 _putchar
+                                 000010c0 0031(00001608:.SLIB)
+                                          0031(0000167f:.SLIB)
+                 _hardware_init
+                                 000010da 0001(00000887:.textf)
+     SECTION=.bss
+                 _flag_PROJ_CTL
+                                 000ffb00 0016(00000b59:.textf)
+                                          0016(00000b60:.textf)
+                                          0016(00000b82:.textf)
+                                          0016(00000c47:.textf)
+                                          0016(00000c4e:.textf)
+                                          0016(00000c70:.textf)
+                                          0016(00000cdd:.textf)
+                                          0016(00000d4f:.textf)
+                                          0016(00000dad:.textf)
+                                          0016(00000e99:.textf)
+                                          0016(00000f44:.textf)
+                                          0016(00000f5e:.textf)
+                                          0016(00000f78:.textf)
+                                          0016(00000f7f:.textf)
+                                          0016(00000f99:.textf)
+                                          0016(00000fab:.textf)
+                                          0016(00000fdd:.textf)
+                                          0016(00000fe9:.textf)
+                                          0016(00001008:.textf)
+                                          0016(00001047:.textf)
+                                          0016(00001051:.textf)
+                                          0016(000010b1:.textf)
+                                          0016(000010b8:.textf)
+     SECTION=.dataR
+                 _counter_tick
+                                 000ffb0e 0016(00000a7e:.textf)
+                                          0016(00000a84:.textf)
+                                          0016(00000a96:.textf)
+                                          0016(00000a9a:.textf)
+                                          0016(00000aa0:.textf)
+                                          0016(00000aa4:.textf)
+                                          0016(00000aac:.textf)
+                                          0016(00000ab0:.textf)
+                 _btn_counter_tick
+                                 000ffb12 0016(00000a30:.textf)
+                                          0016(00000a36:.textf)
+                                          0016(00000a48:.textf)
+                                          0016(00000a4c:.textf)
+                                          0016(00000a52:.textf)
+                                          0016(00000a56:.textf)
+                                          0016(00000a5e:.textf)
+                                          0016(00000a62:.textf)
+                 _pwm_duty
+                                 000ffb16 0016(00000ce8:.textf)
+                                          0016(00000d0c:.textf)
+                 _vdd_Vbgr
+                                 000ffb36 0016(00000c90:.textf)
+                                          0016(00000c94:.textf)
+                 _adc_buffer
+                                 000ffb3a 0016(00000b8d:.textf)
+                 _g_iConversionData
+                                 000ffb50 0016(00000b97:.textf)
+                                          0016(00000ba8:.textf)
+                                          0016(00000bba:.textf)
+                 _ADC_ch_value
+                                 000ffb68 0016(00000cce:.textf)
+                                          0016(00000e2a:.textf)
+     SECTION=.const
+     SECTION=.data
+0017 Config_UART0
+     SECTION=.textf
+                 _R_Config_UART0_Create
+                                 00001119 0019(0000128f:.textf)
+                 _R_Config_UART0_Start
+                                 000011be 0016(000010e0:.textf)
+                 _R_Config_UART0_Stop
+                                 000011ec
+                 _R_Config_UART0_Send
+                                 00001211
+                 _R_Config_UART0_Receive
+                                 0000124b
+     SECTION=.bss
+                 _gp_uart0_tx_address
+                                 000ffb04 0017(0000122b:.textf)
+                                          0017(00001236:.textf)
+                                          0017(0000123c:.textf)
+                                          0018(000001e5:.text)
+                                          0018(000001eb:.text)
+                 _g_uart0_tx_count
+                                 000ffb06 0017(00001230:.textf)
+                                          0017(0000123f:.textf)
+                                          0018(000001de:.text)
+                                          0018(000001ee:.text)
+                 _gp_uart0_rx_address
+                                 000ffb08 0017(0000126e:.textf)
+                                          0018(00000225:.text)
+                                          0018(0000022b:.text)
+                                          0018(00000277:.text)
+                 _g_uart0_rx_count
+                                 000ffb0a 0017(00001264:.textf)
+                                          0018(0000021f:.text)
+                                          0018(0000022e:.text)
+                                          0018(00000234:.text)
+                 _g_uart0_rx_length
+                                 000ffb0c 0017(00001269:.textf)
+                                          0018(0000021c:.text)
+                                          0018(00000231:.text)
+0018 Config_UART0_user
+     SECTION=.textf
+                 _R_Config_UART0_Create_UserInit
+                                 00001277 0017(000011ba:.textf)
+     SECTION=.text
+0019 r_cg_sau_common
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 0000128a 0004(000008bf:.textf)
+                 _R_SAU0_Set_PowerOn
+                                 00001293
+                 _R_SAU0_Set_PowerOff
+                                 00001298
+0020 Config_INTC
+     SECTION=.textf
+                 _R_Config_INTC_Create
+                                 0000129d 0004(000008c3:.textf)
+                 _R_Config_INTC_INTP0_Start
+                                 000012b4 0016(000010e8:.textf)
+                 _R_Config_INTC_INTP0_Stop
+                                 000012bb
+0021 Config_INTC_user
+     SECTION=.textf
+                 _R_Config_INTC_Create_UserInit
+                                 000012c2 0020(000012b0:.textf)
+     SECTION=.text
+0022 Config_ADC
+     SECTION=.textf
+                 _R_Config_ADC_Create
+                                 000012c3 0004(000008c7:.textf)
+                 _R_Config_ADC_Start
+                                 000012f7 0016(00000b5c:.textf)
+                                          0016(00000c4a:.textf)
+                 _R_Config_ADC_Stop
+                                 00001301 0016(00000b7d:.textf)
+                                          0016(00000c6b:.textf)
+                 _R_Config_ADC_Set_OperationOn
+                                 0000130b
+                 _R_Config_ADC_Set_OperationOff
+                                 00001322
+                 _R_Config_ADC_Get_Result_10bit
+                                 00001326 0016(00000b79:.textf)
+                                          0016(00000c67:.textf)
+                 _R_Config_ADC_Set_ADChannel
+                                 00001331
+                 _R_Config_ADC_Set_TestChannel
+                                 00001381
+0023 Config_ADC_user
+     SECTION=.textf
+                 _R_Config_ADC_Create_UserInit
+                                 000013bb 0022(000012f2:.textf)
+     SECTION=.text
+0024 r_cg_ad_common
+     SECTION=.textf
+                 _R_ADC_Set_PowerOn
+                                 000013bc
+                 _R_ADC_Set_PowerOff
+                                 000013c1
+0025 Config_TAU0_2
+     SECTION=.textf
+                 _R_Config_TAU0_2_Create
+                                 000013c6 0005(000008d4:.textf)
+                 _R_Config_TAU0_2_Start
+                                 00001464 0016(000010f2:.textf)
+                 _R_Config_TAU0_2_Stop
+                                 00001483
+0026 Config_TAU0_2_user
+     SECTION=.textf
+                 _get_TAU0_pwm_ch_data_reg_default
+                                 000014a2 0016(00000d46:.textf)
+                                          0016(00000e1c:.textf)
+                 _get_TAU0_pwm_ch_data_reg
+                                 000014aa 0026(000014b9:.textf)
+                 _set_TAU0_pwm_ch_data_reg
+                                 000014b1 0016(00000da6:.textf)
+                                          0016(00000e06:.textf)
+                                          0016(00000e5c:.textf)
+                 _R_Config_TAU0_2_Create_UserInit
+                                 000014b8 0025(00001460:.textf)
+     SECTION=.text
+0027 _COM_lmul
+     SECTION=.SLIB
+                 __COM_lmul
+                                 000014c6 0016(00000c7e:.textf)
+                                          0016(00000e2e:.textf)
+0028 _COM_uidiv
+     SECTION=.SLIB
+                 __COM_uidiv
+                                 00001511 0016(00000d66:.textf)
+                                          0016(00000dc4:.textf)
+0029 _COM_uldiv
+     SECTION=.SLIB
+                 __COM_uldiv
+                                 0000152f 0016(00000c8c:.textf)
+                                          0016(00000e3d:.textf)
+                                          0032(000018c1:.SLIB)
+0030 _COM_ulrem
+     SECTION=.SLIB
+                 __COM_ulrem
+                                 0000157d 0016(00000f38:.textf)
+                                          0016(00000f52:.textf)
+                                          0016(00000f6c:.textf)
+                                          0032(0000189b:.SLIB)
+0031 printf_tiny
+     SECTION=.SLIB
+                 _printf_tiny
+                                 000015c8 0016(00000fc6:.textf)
+                                          0016(0000103d:.textf)
+                                          0016(0000106d:.textf)
+                                          0016(00001087:.textf)
+                                          0016(00001113:.textf)
+0032 _REL_print_tiny
+     SECTION=.SLIB
+                 __REL_print_tiny
+                                 00001683 0031(0000165b:.SLIB)
+0033 isdigit
+     SECTION=.SLIB
+                 _isdigit
+                                 00001c83 0032(00001707:.SLIB)
+0034 rlink_generates_01
+     SECTION=.option_byte
+0035 rlink_generates_02
+     SECTION=.monitor1
+     SECTION=.monitor2
+0036 rlink_generates_03
+     SECTION=.security_id
+0037 rlink_generates_04
+     SECTION=.vect
+0038 rlink_generates_05
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __s.constf
+                                 00000080
+                 __e.constf
+                                 00000080
+                 __s.sdata
+                                 00000080
+                 __e.sdata
+                                 00000080
+                 __s.init_array
+                                 00000080
+                 __e.init_array
+                                 00000080
+                 __e.vect
+                                 00000080
+                 __s.option_byte
+                                 000000c0
+                 __s.RLIB
+                                 000000c4
+                 __e.RLIB
+                                 000000c4
+                 __e.option_byte
+                                 000000c4
+                 __s.security_id
+                                 000000c4
+                 __s.monitor1
+                                 000000ce
+                 __e.security_id
+                                 000000ce
+                 __s.data
+                                 000000d8
+                 __e.monitor1
+                                 000000d8
+                 __s.text
+                                 00000136
+                 __e.data
+                                 00000136
+                 __e.text
+                                 000002d6
+                 __s.const
+                                 00000800
+                 __s.textf
+                                 00000886
+                 __e.const
+                                 00000886
+                 __e.textf
+                                 000014c6
+                 __s.SLIB
+                                 000014c6
+                 __e.SLIB
+                                 00001c8d
+                 __s.monitor2
+                                 00001e00
+                 __e.monitor2
+                                 00002000
+                 __s.bss
+                                 000ffb00
+                 __RAM_ADDR_START
+                                 000ffb00
+                 __e.bss
+                                 000ffb0e
+                 __s.dataR
+                                 000ffb0e
+                 __e.dataR
+                                 000ffb6c
+                 __STACK_ADDR_END
+                                 000ffb6c 0009(0000013b:.text)
+                 __s.sbss
+                                 000ffe20
+                 __e.sbss
+                                 000ffe20
+                 __s.sdataR
+                                 000ffe20
+                 __e.sdataR
+                                 000ffe20
+                 __STACK_ADDR_START
+                                 000ffe20 0009(00000138:.text)
+                 __RAM_ADDR_END
+                                 000ffee0
