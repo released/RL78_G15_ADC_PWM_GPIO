@@ -39,8 +39,8 @@ volatile unsigned long btn_counter_tick = 0;
 #define cLED3                                           (P0_bit.no7)
 #define cLED4                                           (P0_bit.no6)
 #define cLED5                                           (P0_bit.no5)
-#define cLED6                                           (P0_bit.no1)
-#define cLED7                                           (P0_bit.no0)
+#define cLED6                                           (P0_bit.no4)
+#define cLED7                                           (P0_bit.no3)
 #define cLED8                                           (P4_bit.no1)
 
 #define ENABLE_GPIO_REVERSE
@@ -65,7 +65,7 @@ volatile unsigned short ADC_ch_value = 0;
 
 // #define ENABLE_LOG_ADC
 // #define ENABLE_LOG_PWM
-// #define ENABLE_LOG_ADC_CVT_PWM
+#define ENABLE_LOG_ADC_CVT_PWM
 /*_____ M A C R O S ________________________________________________________*/
 
 /*_____ F U N C T I O N S __________________________________________________*/
@@ -636,7 +636,7 @@ void loop(void)
     // need t remove convert_ADC_to_PWM , if plan to use terminal D/A to change PWM duty
     // PWM_Process_Adjust();      
 
-    // need t remove PWM_Process_Adjust , if plan to use ADC to change PWM duty   
+    // need to remove PWM_Process_Adjust , if plan to use ADC to change PWM duty   
     convert_ADC_to_PWM();
 }
 
@@ -855,7 +855,7 @@ void hardware_init(void)
 {
     // const unsigned char indicator[] = "hardware_init";
     BSP_EI();
-    R_Config_UART0_Start();         // UART , P03 , P04
+    R_Config_UART0_Start();         // UART , EVB RX/P00 , EVB TX/P01
     R_Config_TAU0_1_Start();        // TIMER
     R_Config_INTC_INTP0_Start();    // BUTTON , P137 
 
@@ -879,11 +879,11 @@ void hardware_init(void)
         P07:                // external LED3
         P06:                // external LED4
         P05:                // external LED5
-        P04:                // UART RX
-        P03:                // UART TX
+        P04:                // external LED6
+        P03:                // external LED7
         P02:                // external P02/AIN1 , use ADC to change TO03 PWM output
-        P01:                // external LED6
-        P00:                // external LED7
+        P01:                // EVB RX
+        P00:                // EVB TX
 
     */
     LED_Default();

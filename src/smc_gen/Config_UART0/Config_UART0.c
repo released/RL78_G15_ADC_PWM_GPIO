@@ -91,13 +91,11 @@ void R_Config_UART0_Create(void)
     SOL0 |= _0000_SAU_CHANNEL0_NORMAL;    /* output level normal */
     SOE0 |= _0001_SAU_CH0_OUTPUT_ENABLE;    /* enable UART0 output */
     /* Set TxD0 pin */
-    POM0 &= 0xF7U;
-    PMC0 &= 0xF7U;
-    P0 |= 0x08U;
-    PM0 &= 0xF7U;
+    P0 |= 0x01U;
+    PM0 &= 0xFEU;
     /* Set RxD0 pin */
-    PMC0 &= 0xEFU;
-    PM0 |= 0x10U;
+    PMC0 &= 0xFDU;
+    PM0 |= 0x02U;
 
     R_Config_UART0_Create_UserInit();
 }

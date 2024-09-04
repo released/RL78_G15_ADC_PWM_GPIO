@@ -38,15 +38,15 @@ udpate @ 2024/08/12
 		
         P05:                // external LED5
 		
-        P04:                // UART RX
+        P04:                // external LED6
 		
-        P03:                // UART TX
+        P03:                // external LED7
 		
         P02:                // external P02/AIN1 , use ADC to change TO03 PWM output
 		
-        P01:                // external LED6
+        P01:                // EVB RX
 		
-        P00:                // external LED7
+        P00:                // EVB TX
 
 2. toggle LED * 8 in sequence
 

@@ -106,17 +106,17 @@
         <pinItem allocation="19" comments="" direction="O" id="P23" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="20" comments="" direction="O" id="P22" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="2" comments="" direction="None" id="TO03" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="14" comments="" direction="None" id="TxD0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="11" comments="" direction="None" id="TxD0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="6" comments="" direction="None" id="INTP0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="3" comments="" direction="O" id="P41" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="12" comments="" direction="O" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="11" comments="" direction="O" id="P00" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="14" comments="" direction="O" id="P03" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="16" comments="" direction="O" id="P05" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="15" comments="" direction="O" id="P04" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="18" comments="" direction="O" id="P07" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="17" comments="" direction="O" id="P06" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="4" comments="" direction="None" id="TOOL0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="5" comments="" direction="None" id="_RESET" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="15" comments="" direction="None" id="RxD0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="12" comments="" direction="None" id="RxD0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinnumItem comment="" id="1" symbolicname="LED2"/>
         <pinnumItem comment="" id="2" symbolicname="LED1"/>
     </tool>
@@ -154,12 +154,12 @@
                 </allocatable>
                 <allocatable id="PORT0_Chan">
                     <allocatable id="P00">
-                        <option enabled="true" id="UseStatus" selection="Out">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -167,18 +167,18 @@
                             <item id="NchUse" input="" vlaue="0"/>
                             <item id="NchUnuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>
                     </allocatable>
                     <allocatable id="P01">
-                        <option enabled="true" id="UseStatus" selection="Out">
+                        <option enabled="true" id="UseStatus" selection="Unuse">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Pullup" selection="PullupUnuse">
+                        <option enabled="true" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -186,7 +186,7 @@
                             <item id="NchUse" input="" vlaue="0"/>
                             <item id="NchUnuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Output1" selection="Output1Unuse">
+                        <option enabled="false" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>
@@ -207,12 +207,12 @@
                         </option>
                     </allocatable>
                     <allocatable id="P03">
-                        <option enabled="true" id="UseStatus" selection="Unuse">
+                        <option enabled="true" id="UseStatus" selection="Out">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -220,18 +220,18 @@
                             <item id="NchUse" input="" vlaue="0"/>
                             <item id="NchUnuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>
                     </allocatable>
                     <allocatable id="P04">
-                        <option enabled="true" id="UseStatus" selection="Unuse">
+                        <option enabled="true" id="UseStatus" selection="Out">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="Pullup" selection="PullupUnuse">
+                        <option enabled="false" id="Pullup" selection="PullupUnuse">
                             <item id="PullupUse" input="" vlaue="0"/>
                             <item id="PullupUnuse" input="" vlaue="0"/>
                         </option>
@@ -239,7 +239,7 @@
                             <item id="NchUse" input="" vlaue="0"/>
                             <item id="NchUnuse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
                             <item id="Output1Use" input="" vlaue="0"/>
                             <item id="Output1Unuse" input="" vlaue="0"/>
                         </option>

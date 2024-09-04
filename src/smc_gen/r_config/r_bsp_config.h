@@ -189,7 +189,7 @@
      SI00/RxD0/SDA00 - Setting prohibited
      SO00/TxD0       - Setting prohibited
 */
-#define BSP_CFG_PIOR11 (1) /* Generated value. Do not edit this manually */
+#define BSP_CFG_PIOR11 (0) /* Generated value. Do not edit this manually */
 #define BSP_CFG_PIOR10 (0) /* Generated value. Do not edit this manually */
 
 /* Peripheral I/O redirection register(PIOR1-PIOR13/PIOR12)
